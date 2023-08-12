@@ -33,25 +33,18 @@ if (age > 18) {
 // ==     compare only data
 // ===    compare data + datatype
 
-
 console.log(200 === "200")
-
 
 
 // &&  -- all condition must be true
 // ||  -- one condition is ture then will return true
 
 console.log(13 > 6 && 15 > 10 && 5556 > 987)
-
 console.log(9 > 14 || 998 > 897 || 76 > 987)
-
-
-
 
 
 var age = 18;
 var had = false;
-
 // console.log(had)
 
 if (age >= 19 && age <= 80 && had == false) {
@@ -65,7 +58,6 @@ if (age >= 19 && age <= 80 && had == false) {
 
 // break - for loops
 // return
-
 
 var age = "Swaraj";
 
@@ -104,7 +96,6 @@ switch (age) {
 // console.log(7)
 
 
-
 var num = 8765; // assign
 num = num + 1; // re-assign
 num = num + 1; // re-assign
@@ -133,10 +124,13 @@ for (var i = 1; i <= 100; i = i + 4) {
     console.log(i)
     // i = i + 1
 }
+
 // 1st Iteration : i = 1,  1 <= 10 - true, log(1), i = 1 + 1 , i = 2
 // 2nd Iteration : i = 2,  2 <= 10 - true, log(2), i = 2 + 1 , i = 3
 // 3rd Iteration : i = 3,  3 <= 10 - true, log(3), i = 3 + 1 , i = 4
-
+// .
+// .
+// .
 // 9th Iteration : i = 9, 9 <= 10 - true, log(9),  i = 9 + 1, i = 10
 // 10th Iteration :i = 10, 10 <= 10 - true, log(10), i = 10 + 1, i = 11;
 // 11th iteration :i = 11, 11 <= 10 - false 
