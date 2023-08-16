@@ -14,7 +14,7 @@
 
 // }
 
-var age = 88;
+var age = 28;
 console.log(age > 18)
 
 if (age > 18) {
@@ -24,14 +24,14 @@ if (age > 18) {
 }
 
 // types :
-// =
-// ==
-// ===
+// 1.=
+// 2.==
+// 3.===
 
 // description :
-// =      Value assign
-// ==     compare only data
-// ===    compare data + datatype
+// 1.=      Value assign
+// 2.==     compare only data
+// 3.===    compare data + datatype
 
 console.log(200 === "200")
 
@@ -45,7 +45,7 @@ console.log(9 > 14 || 998 > 897 || 76 > 987)
 
 var age = 18;
 var had = false;
-// console.log(had)
+console.log(had)
 
 if (age >= 19 && age <= 80 && had == false) {
     console.log(`You are allowed for DL age - ${age}`)
@@ -59,13 +59,13 @@ if (age >= 19 && age <= 80 && had == false) {
 // break - for loops
 // return
 
-var age = "Swaraj";
+var age = "Sagar";
 
 switch (age) {
-    case "Swaraj" || "xyz":
-        console.log("xyz")
+    case "Sagar" || "saggy":
+        console.log("saggy")
         break;
-    case "Awdiz":
+    case "Kurhade":
         console.log(age)
         break;
     case "xyz":
@@ -74,7 +74,7 @@ switch (age) {
     case "abc":
         console.log(age)
         break;
-    case "poi":
+    case "sbk":
         console.log(age)
         break;
     default:
