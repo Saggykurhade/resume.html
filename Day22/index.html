@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Email</label><br/>
+        <input type="email" id="email" /><br />
+        <label>Password</label><br/>
+        <input type="password" id="password" /><br />
+        <input type="submit" /><br/>
+    </form>
+
+    <script>
+        function register(event) {
+            event.preventDefault();
+            const userEmail = document.getElementById('email').value;
+            const userPassword = document.getElementById("password").value;
+            // console.log(userName, userEmail, userPassword)
+            if (userEmail && userPassword) {
+                if (userPassword === userConfirmPassword) {
+                    // alert("Pass and con pass matched,,")
+                    const userObject = { email: userEmail, password: userPassword }
+
+                    var array = JSON.parse(localStorage.getItem("users")) || [];
+                    var array = JSON.parse(localStorage.getItem("users")) || []; //array = [{ abc }]
+                    // console.log(array, "-check here")
+                    array.push(userObject)
+
+                    localStorage.setItem("users", JSON.stringify(array))
+                    for (var i = 0; i < array.length; i++) {
+                        // console.log(array[i],`- user ${i}`)
+                        // console.log(array[i].email,`- user ${i}`)
+                        if (array[i].email === userEmail && array[i].password === userpassword) {
+                            return alert("Email is already exist, try different email.")
+                        }
+                        // if(array[i].number === userNumber){}
+
+                    }
+
+                    array.push(userObject) //[{ abc }, { xyz }, { pqr }]
+
+                    localStorage.setItem("users", JSON.stringify(array)) //[{ abc }, { xyz }, { pqr }]
+
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+                    alert("Register Succees..")
+                } else {
+                    alert("Password and Confirm not matched,,,")
+                }
+            } else {
+                alert("All fields are mandtory...")
+            }
+        }
+        
+    </script>
+</body>
+</html>
