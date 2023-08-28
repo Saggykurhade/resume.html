@@ -1,19 +1,20 @@
-// Datatypes
-// Varibles
-// Conditional Statement
+Datatypes
+Varibles
+Conditional Statement
 
 // Types:
-// 1.if else
-// 2.switch
+1.if else
+2.switch
 
-// if else
-// syntax -
-// if () {
+1.if else
+2.syntax -
+3.if () {
 
-// } else {
+} else {
 
-// }
+}
 
+// example
 var age = 28;
 console.log(age > 18)
 
@@ -24,14 +25,14 @@ if (age > 18) {
 }
 
 // types :
-// 1.=
-// 2.==
-// 3.===
+1.=
+2.==
+3.===
 
 // description :
-// 1.=      Value assign
-// 2.==     compare only data
-// 3.===    compare data + datatype
+1.=      Value assign
+2.==     compare only data
+3.===    compare data + datatype
 
 console.log(200 === "200")
 
@@ -82,11 +83,11 @@ switch (age) {
 }
 
 // types :
-// 1.Loops 
-// 2.for 
-// 3.while
+1.Loops 
+2.for 
+3.while
 
-// 1.for :
+1.for :
 // console.log(1)
 // console.log(2)
 // console.log(3)

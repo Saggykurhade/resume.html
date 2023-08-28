@@ -93,7 +93,6 @@ console.log(result)
 
 
 
-
 // Q Table - 
 
 // var number = 23;
