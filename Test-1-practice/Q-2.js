@@ -57,18 +57,18 @@ console.log(findSumNumber(numbers));
 
 
 var numbers = [
-    11, 12, 25, 25, 36, 14, 15, 25, 48, 74, 79, 46, 35, 69, 89, 321, 42, 55, 25,
-    55, 66, 66, 54, 215, 52,
-  ];
-  
-  function findSumNumber(array) {
-    var result = [];
-    for (var i = 0; i < array.length; i++) {
-      if (array[i] % 2 == 0) {
-        result.push(array[i]);
-      }
+  14, 125, 1452, 365, 896, 3657, 5698, 63365, 25596, 2559, 5664554, 65, 44, 654,
+  65, 65, 2166, 6995, 223, 6965,
+];
+
+function findSumNumber(array) {
+  var result = [];
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] % 2 == 0) {
+      result.push(array[i]);
     }
-    return result;
   }
-  console.log(findSumNumber(numbers));
-   
+  return result;
+}
+
+console.log(findSumNumber(numbers));
