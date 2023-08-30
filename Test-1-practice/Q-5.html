@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+<body>
+    <form onsubmit="addproduct(event)">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" placeholder="enter your name"><br>
+        <label for="price">Price</label><br>
+        <input type="number" id="price" placeholder="enter price"><br>
+        <label for="image">Image</label><br>
+        <input type="file" id="image"><br>
+        <select name="" id="category"><br>
+            <option value="cat1">Cat1</option>
+            <option value="cat2">Cat2</option>
+            <option value="cat2">Cat3</option>
+            <option value="cat2">Cat4</option>
+            <option value="cat2">Cat5</option>
+        </select>
+        <input type="submit" value="Add Item">
+    </form>
+    <script>
+        function addproduct(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let price = document.getElementById("price").value;
+            let image = document.getElementById("image").value;
+            let category = document.getElementById("category").value;
+
+            let Item = {name, price, imge, category};
+
+            localStorage.setItem('item',JSON.stringify(user))
+        }
+    </script>
+</body>
+</html>
