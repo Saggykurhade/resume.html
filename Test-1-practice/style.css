@@ -1,15 +1,15 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-#Screen {
+#screen {
     /* border: 2px solid green; */
     width: 100%;
-    height: 880px;
+    height: 1300px;
 }
 
-#Screen img {
+#screen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -58,13 +58,6 @@
     justify-content: space-between;
 }
 
-#freecss>div:nth-child(2) {
-    /* border: 1px solid green; */
-    width: 450px;
-    height: 60px;
-    align-self: center;
-}
-
 #freecss>div:nth-child(1) h1 {
     font-size: 70px;
     font-weight: 500;
@@ -74,14 +67,20 @@
     font-size: 14px;
 }
 
+#freecss>div:nth-child(2) {
+    /* border: 1px solid green; */
+    width: 450px;
+    height: 60px;
+    align-self: center;
+}
+
 #body {
-    height: 780px;
+    height: 900px;
     width: 63%;
     margin: auto;
     border-radius: 10px;
     /* border: 2px solid red; */
     background-color: white;
-
 }
 
 #nav {
@@ -95,7 +94,6 @@
     justify-content: center;
     margin-bottom: 30px;
     border-radius: 5px;
-
 }
 
 #nav a {
@@ -123,7 +121,6 @@
     background-color: #F0F0F0;
     color: #666666;
     margin-bottom: 40px;
-
 }
 
 #left>h1>span {
@@ -137,6 +134,7 @@
     color: #666666;
     line-height: 25px;
     margin-bottom: 20px;
+    font-family:  Georgia, "Times New Roman", Times, serif;
 }
 
 #photos {
@@ -156,16 +154,23 @@
 }
 
 #photos :hover {
-    border: 1px solid blue;
+    border: 1px solid aqua;
 }
 
 #photos>div :hover {
     background-color: white;
 }
 
+#leftphotodown {
+/* border: 1px solid green; */
+width: 450px;
+height: 60px;
+margin-left: 80px;
+}
+
 #right {
     width: 32%;
-    height: 100%;
+    height: 80%;
     /* border: 1px solid black; */
 }
 
@@ -182,16 +187,30 @@
     padding-bottom: 5px;
 }
 
-#PhotoUp {
+#photoup {
     width: 100%;
     height: 250px;
     border: 1px solid green;
     margin-bottom: 25px;
 }
 
-#PhotoDown>div {
-    width: 42%;
-    height: 100%;
+#photodown {
+    width: 100%;
+    height: 130px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#photodown>div :nth-child(1) {
+    width: 130px;
+    height: 130px;
+    border: 1px solid black;
+}
+
+#photodown>div :nth-child(2) {
+    width: 130px;
+    height: 130px;
     border: 1px solid black;
 }
 
@@ -200,7 +219,7 @@
     height: 80px;
     width: 100%;
     /* border: 1px solid green; */
-    margin-top: 10px;
+    margin-top: 150px;
     color: #878793;
     display: flex;
     justify-content: space-around;
