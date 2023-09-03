@@ -1,12 +1,12 @@
 var array = [1,2,3,4]
 
-function maximum(value) {
-    var maximum = [];
+function maximum(array) {
+    var highest = [0];
     for (var i = 1; i < array.length; i++) {
-        if (result > array[i]) {
-            result == array[i]
+        if (highest < array[i]) {
+            highest = array[i]
         }
     }
-    result maximum
+    return highest
 }
 console.log(maximum(array))
