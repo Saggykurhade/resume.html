@@ -1,78 +1,98 @@
-Data types
-
-// 1. String : 
-Syntax = "", '', ``
-// Examples : 
-"Sagar", 'kurhade.4511@gmail.com', `28` , "My name is awdiz",
-'My age is 28 and my school is awdiz..'
-
-// 2. Number : 
-Syntax = 
-// Examples :
-34, 54678, -9876, 23.45, 0
-
-// 3. Boolean : 
-Syntax =
-// Examples :
-true , false
-
-// 4. Undefined :
-Initially no value 
+// for (starting; ending; sequence) {
+// }
 
 
-// Varibles :
-// types =
-1.var 
-2.let 
-3.const
+// for (var i = 100; i >= 50; i = i - 1) {
+//     console.log(i)
+// }
 
 
-// var : 
-syntax : var nameOFvarible = value ;
+for (var i = 100; i >= 50; i = i - 1) {
+    console.log(i)
+    if (i == 80) {
+        console.log("We got 80.")
+        break;
+    }
+}
+
+// _____ 5 - Q
+// 2 /  11
+//      10
+//       1 - R
+
+//       10 / 2 =   Q
+//       10 % 2 =   R - 0 - even 
 
 
-var myName = "Sagar";
-var mySurname = "Kurhade";
-var myAge = 28;
-var isCompletedAssignment = True;
-var description = "My name is sagar i'm from mumbai i'm working at Awdiz..."
+// Q. Find numbers who are even from 35 - 256;
+var start = 35;
+var end = 256;
 
-console.log(myName)
-console.log(mySurname)
-console.log(myAge)
-console.log(isCompletedAssignment)
-console.log(description)
-
-
-var myName = "Sagar";
-console.log(myName, typeof (myName))
-var mySurname = 'Kurhade';
-console.log(mySurname, typeof (mySurname))
-var myCity = `Mumbai`;
-console.log(myCity, typeof (myCity))
-var myAge = 60;
-console.log(myAge , typeof(myAge))
-var isHadDinner = True;
-console.log(isHadDinner, typeof (isHadDinner))
-var myDecscription ;
-console.log(myDecscription, typeof(myDecscription))
-
-var num1 = 5826;
-var num2 = 9567;
-var addition = num1 + num2;
-console.log(addition, "- addition")
-var subtraction = num1 - num2;
-console.log(subtraction, "- subtraction")
-var multi = num1 * num2;
-console.log(multi, "- Multiplication");
-var divid = num1 / (num2 + num1);
-console.log(divid, "- dividation")
-
-var additionOfThree = num1 + num2 + num1;
-console.log(additionOfThree)
+for (var i = start; i <= end; i++) {
+    if (i % 2 == 0) {
+        console.log(`${i} - Even Number`)
+    } else {
+        console.log(`${i} - Odd Number`)
+    }
+}
 
 
-var myName = "Sagar";
-var message = "Welcome To our website, Mr. Sagar";
-var newMessage = `Welcome to our website Mr. ${myName}`
- 
+// Q Find total count from range 123 - 873, who are odd
+var start = 123;
+var end = 873;
+var oddCount = 0;
+var evenCount = 0;
+
+for (var i = start; i <= end; i++) {
+    if (i % 2 != 0) {
+        // console.log(i)
+        oddCount++;
+    } else {
+        evenCount++;
+    }
+}
+
+console.log(oddCount, "Total odd numbers")
+console.log(evenCount, "Total even numbers")
+
+
+// Q Find out addition of first 10 natural numbers who are even ...
+var result = 0;
+
+for (var i = 1; i <= 10; i++) {
+    if (i % 2 == 0) {
+        result = result + i;
+    }
+}
+
+console.log(result);
+
+
+
+// Q Find the Factorial..  1 * 2 * 3 *4 * 5 * 6 * 7 * 8 * 9 * 10 * 11 *  12
+var number = 3;
+var result = 1;
+
+for (var i = 2; i <= number; i++) {
+    result = result * i;
+}
+console.log(result)
+
+
+var number = 5;
+var result ;
+
+for (var i = 1; i <= number; i++) {
+    if (result == undefined) {
+        result = i;
+    } else {
+        result = result * i;
+    }
+}
+console.log(result)
+
+
+
+// Q Table - 
+
+// var number = 23;
